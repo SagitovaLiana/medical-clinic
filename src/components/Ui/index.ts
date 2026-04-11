@@ -6,3 +6,4 @@ export { default as Testimonials } from "./Testimonials";
 export { default as Logo } from "./Logo";
 export { default as HeroSub } from "./HeroSub";
 export { default as NotFound} from "./NotFound";
+export { default as Breadcrumb} from "./Breadcrumb";

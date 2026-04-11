@@ -5,8 +5,6 @@ import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from "@/components/ScrollToTop";
 import Aoscompo from "@/utils/aos";
-import SessionProviderComp from "@/components/nextauth/SessionProvider";
-import { AuthDialogProvider } from "./context/AuthDialogContext";
 import NextTopLoader from "nextjs-toploader";
 
 const manrope = Manrope({
@@ -24,14 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body className={manrope.className}>
-        <AuthDialogProvider>
-          <SessionProviderComp session={session}>
-            <ThemeProvider
-              attribute="class"
-              enableSystem={true}
-              defaultTheme="system"
-            >
+      <body className={manrope.className}>   
+        <ThemeProvider  attribute="class" defaultTheme="system" enableSystem>  
               <Aoscompo>
                 <Header />
                 <NextTopLoader />
@@ -39,9 +31,7 @@ export default function RootLayout({
                 <Footer />
               </Aoscompo>
               <ScrollToTop />
-            </ThemeProvider>
-          </SessionProviderComp>
-        </AuthDialogProvider>
+              </ThemeProvider>
       </body>
     </html>
   );

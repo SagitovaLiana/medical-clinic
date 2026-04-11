@@ -48,7 +48,7 @@ const Footer: FC = () => {
               <div>
                 <p className="text-PaleCerulean">Пн-Пт: 8:00 - 20:00</p>
                 <p className="text-PaleCerulean">Сб: 9:00 - 15:00</p>
-                <p className="text-PaleCerulean">Вс: выходной  уаакуевепавкп</p>
+                <p className="text-PaleCerulean">Вс: выходной</p>
               </div>
             </div>
           </div>
@@ -59,13 +59,13 @@ const Footer: FC = () => {
               <Link href="/">Главная</Link>
             </li>
             <li className="transition-all duration-300 hover:text-primary">
-              <Link href="/">О нас</Link>
+              <Link href="/aboutus">О нас</Link>
             </li>
             <li className="transition-all duration-300 hover:text-primary">
-              <Link href="/">Главная</Link>
+              <Link href="/services">Услуги</Link>
             </li>
             <li className="transition-all duration-300 hover:text-primary">
-              <Link href="/">Главная</Link>
+              <Link href="/contact">Контакты</Link>
             </li>
           </ul>
           </div>
@@ -80,9 +80,6 @@ const Footer: FC = () => {
             </li>
             <li className="transition-all duration-300 hover:text-primary">
               <Link href="/">Политика cookie</Link>
-            </li>
-            <li className="transition-all duration-300 hover:text-primary">
-              <Link href="/">Главная</Link>
             </li>
           </ul>
           </div>

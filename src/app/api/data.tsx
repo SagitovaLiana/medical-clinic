@@ -52,7 +52,7 @@ export const conferences = [
     subtitle: "Прием ведет",
     speakers: "Чекмарев Алим Равилевич",
     buttonText: "Подробнее",
-    buttonLink: "/",
+    buttonLink: "/services/lor",
   },
   {
     title: "Прием гинеколога",
@@ -60,7 +60,7 @@ export const conferences = [
     subtitle: "Прием ведет",
     speakers: "Валиева Гузель Кавиевна",
     buttonText: "Подробнее",
-    buttonLink: "/",
+    buttonLink: "/services/gynecology",
   },
   {
     title: "Сдача анализов",
@@ -68,7 +68,39 @@ export const conferences = [
     subtitle: "Лаборатория",
     speakers: "KDL",
     buttonText: "Подробнее",
-    buttonLink: "/",
+    buttonLink: "/services/lab",
+  },
+    {
+    title: "Радиоволновое удаление родинок",
+    icon: HeartIcon,
+    subtitle: "Прием ведет",
+    speakers: "Захарова Лилия Насиховна",
+    buttonText: "Подробнее",
+    buttonLink: "/services/radiowave",
+  },
+      {
+    title: "Услуги косметолога",
+    icon: HeartIcon,
+    subtitle: "Прием ведет",
+    speakers: "Захарова Лилия Насиховна",
+    buttonText: "Подробнее",
+    buttonLink: "/services/cosmetology",
+  },
+   {
+    title: "Прием травматолога",
+    icon: HeartIcon,
+    subtitle: "Прием ведет",
+    speakers: "Саяпов Азат Глимзянович",
+    buttonText: "Подробнее",
+    buttonLink: "/services/traumatology",
+  },
+     {
+    title: "Капельницы",
+    icon: HeartIcon,
+    subtitle: "Прием ведет",
+    speakers: "Саяпов Азат Глимзянович",
+    buttonText: "Подробнее",
+    buttonLink: "/services/drips",
   },
 ];
 

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { HeroSection, AboutUsSection } from "@/components/Home";
 import { Doctors, Services, CTA,  Testimonials } from "@/components/Ui";
 export const metadata: Metadata = {
-  title: "Symposium",
+  title: "Гиппократ",
 };
 
 export default function Home() {

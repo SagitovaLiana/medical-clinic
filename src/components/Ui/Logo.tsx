@@ -5,7 +5,7 @@ const Logo: React.FC = () => {
   return (
     <Link href="/">
       <div className="flex items-center justify-center gap-3">
-        <Stethoscope className="text-accentTextBrown size-8 pb-1 " />
+        <Stethoscope className="text-accentTextBrown dark:text-white size-8 pb-1 " />
         <h2>Гиппократ</h2>
       </div>
     </Link>

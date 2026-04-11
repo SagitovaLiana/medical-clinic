@@ -6,7 +6,7 @@ import { HomeIcon } from "lucide-react";
 
 const NotFound = () => {
   return (
-    <section className="dark:bg-darklight py-20 md:py-32">
+    <section className="dark:bg-darkmode py-20 md:py-32">
       <div className="container">
         <div className="flex flex-wrap items-center -mx-4">
           <div className="w-full px-4 md:w-7/12 lg:w-6/12 xl:w-5/12">

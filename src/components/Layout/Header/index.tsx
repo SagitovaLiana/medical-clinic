@@ -8,7 +8,6 @@ import HeaderLink from "../Header/Navigation/HeaderLink";
 import MobileHeaderLink from "../Header/Navigation/MobileHeaderLink";
 import { useTheme } from "next-themes";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import AuthDialogContext from "@/app/context/AuthDialogContext";
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
@@ -67,7 +66,6 @@ const Header: React.FC = () => {
   //   }
   // }, [isSignInOpen, isSignUpOpen, navbarOpen]);
 
-  const authDialog = useContext(AuthDialogContext);
 
   return (
     <>
