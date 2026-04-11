@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@/Style/style.css";
+
+html {
+  scroll-behavior: smooth;
+  @apply overflow-x-hidden;
+}
+
+body {
+  @apply overflow-x-hidden dark:bg-darkmode;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-neutral: #ede4df;
+  --color-primary: #d64545;
+  --color-light-brown: #714e3a;
+  --color-secondary: #b23939b3;
+  --color-accent: #c96060;
+
+  --color-accent-text-red: #a22c29;
+  --color-accent-text-brown: #5c3a33;
+  --color-accent-text: #36201c;
+  --color-base-text: #8a6b63;
+
+  --color-icons: #d64545;
+
+  --color-serene-sky: #8facc6;
+  --color-electric-aqua: #46c4ff;
+  --color-regal-blue: #13439b;
+  --color-light-yellow: #ffe15a;
+  --color-icy-breeze: #bab1a1;
+  --color-pale-cyan: #cff4ff;
+  --color-aquamarine: #7df9c2;
+
+  --color-midnight-navy-text: #3b0910;
+
+  --color-pale-sky-blu: #e0f7ff;
+  --color-misty-teal-text: #6f9dac;
+
+  --color-olive-drab: #73713c;
+  --color-cadet-blue: #879aac;
+  --color-dandelion: #f2ec1d;
+
+  --color-sky-blue-mist: #c0d5fb;
+  --color-light-sky-blue: #b2d5ea;
+  --color-salem: #1c7c52;
+
+  --color-yellow-rating: #fab446;
+
+  --color-pale-cerulean: #a3bbd1;
+  --color-periwinkle-border: #c0d5fb;
+  --color-light-blue-border: #4f8bfb;
+  --color-ocean-depths-dark-border: #224767;
+  --color-powder-blue-border: #e1f1f6;
+
+  --color-dark-line-color: #24497c;
+  --color-darkmode: #011120;
+  --color-darklight: #0d1a2c;
+  --color-darktext: #7f8487;
+  --color-dark-border: #224767;
+  --color-dark-input: #1b2430;
+}
+
+.dark {
+  --color-base-text: #7f8487;
+}
+@layer components {
+  section {
+    @apply md:py-20 py-10;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-accentText text-17 font-normal;
+  }
+  h1 {
+    @apply md:text-53 text-accentTextBrown text-40 font-bold dark:text-white;
+  }
+  h2 {
+    @apply md:text-40 text-accentTextBrown text-28 font-bold dark:text-white;
+  }
+  .btn_primary {
+    @apply bg-primary text-white py-3 px-8 rounded-lg cursor-pointer transition-all duration-0.4s inline-block;
+  }
+  .container {
+    @apply w-full block max-w-1200 m-auto py-0 px-7;
+  }
+  select {
+    @apply appearance-none bg-[url('/images/contact-page/dropdown.svg')] bg-no-repeat bg-[90%_50%];
+  }
+  /* Primary Button Hover */
+  .btn {
+    @apply relative inline-block bg-transparent border-none cursor-pointer before:absolute before:content-[''] after:absolute after:content-[''];
+  }
+  .btn span {
+    @apply relative inline-block text-17 font-medium top-0 left-0 w-full py-4 px-7 transition-all duration-0.4s;
+  }
+  .btn-1::before {
+    @apply bg-primary transition-all duration-0.4s;
+  }
+  .btn-1 span {
+    @apply text-white border border-solid border-primary rounded-lg transition-all duration-0.4s;
+  }
+  .btn-1 span:hover {
+    @apply text-primary transition-all duration-0.4s;
+  }
+  .btn.hover-filled-slide-down::before {
+    @apply bottom-0 left-0 right-0 h-full w-full;
+  }
+  .btn.hover-filled-slide-down:hover::before {
+    @apply h-0;
+  }
+  /* Button Hover End */
+
+  /* Outline Primary Button Hover */
+  .btn_outline {
+    @apply relative inline-block bg-transparent border-none cursor-pointer before:absolute before:content-[''] after:absolute after:content-[''];
+  }
+  .btn_outline span {
+    @apply relative inline-block text-17 font-medium top-0 left-0 w-full py-4 px-7 transition-all duration-0.4s;
+  }
+  .btn-2::before {
+    @apply bg-primary transition-all duration-0.4s rounded-lg;
+  }
+  .btn-2 span {
+    @apply text-primary border border-solid border-primary rounded-lg transition-all duration-0.4s;
+  }
+  .btn-2 span:hover {
+    @apply text-white transition-all duration-0.4s;
+  }
+  .btn_outline.hover-outline-slide-down::before {
+    @apply top-0 left-0 right-0 h-0 w-full;
+  }
+  .btn_outline.hover-outline-slide-down:hover::before {
+    @apply h-full;
+  }
+  /* Outline Primary Button Hover End */
+}
+
+.blog-details p,
+.blog-details hr {
+  @apply mb-8 text-baseText;
+}
+
+.blog-details hr {
+  @apply dark:border-dark_border;
+}
+
+.blog-details strong {
+  @apply font-bold dark:text-white;
+}
+.blog-details ul {
+  @apply mb-8 list-inside list-disc space-y-3 text-baseText;
+}
+.blog-details ol {
+  @apply mb-8 list-inside list-decimal space-y-3;
+}
+.blog-details h1 {
+  @apply mb-8 text-3xl font-bold text-secondary dark:text-white sm:text-4xl md:text-40;
+}
+.blog-details h2 {
+  @apply mb-8 text-2xl font-bold text-secondary dark:text-white sm:text-3xl md:text-36;
+}
+.blog-details h3 {
+  @apply mb-6 text-2xl font-bold dark:text-white sm:text-28;
+}
