@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useContext, useEffect, useRef, useState } from "react";
 import { headerData } from "../Header/Navigation/menuData";
-import Logo from "./Logo";
+import Logo from "../../Ui/Logo";
 import HeaderLink from "../Header/Navigation/HeaderLink";
 import MobileHeaderLink from "../Header/Navigation/MobileHeaderLink";
 import { useTheme } from "next-themes";
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
       <header
         className={`fixed h-24 top-0 py-1 z-50 w-full bg-transparent transition-all  ${
           sticky
-            ? "shadow-lg dark:shadow-darkmd bg-white dark:bg-secondary"
+            ? "shadow-lg dark:shadow-darkmd bg-white dark:bg-darkmode"
             : "shadow-none"
         }`}
       >
@@ -137,7 +137,7 @@ const Header: React.FC = () => {
         >
           <div className="flex items-center justify-between p-4">
             <h2 className="text-lg font-bold text-black dark:text-SlateBlueText">
-              Menu
+              Меню
             </h2>
             <button
               onClick={() => setNavbarOpen(false)}

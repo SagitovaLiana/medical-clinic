@@ -2,7 +2,7 @@
 // import PopularArticle from "@/components/Blog/PopularArticle";
 // import SingleBlog from "@/components/Blog/SingleBlog";
 import { getAllPosts, getPostBySlug } from "@/utils/markdown";
-import TicketSection from "@/components/Home/TicketSection";
+import TicketSection from "@/components/Ui/CTA";
 import markdownToHtml from "@/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";

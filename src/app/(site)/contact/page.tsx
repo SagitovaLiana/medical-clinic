@@ -2,9 +2,9 @@ import ContactForm from "@/components/Contact/Form";
 import ContactInfo from "@/components/Contact/ContactInfo";
 import Location from "@/components/Contact/OfficeLocation";
 import React from "react";
-import HeroSub from "@/components/SharedComponent/HeroSub";
+import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
-import TicketSection from "@/components/Home/TicketSection";
+import TicketSection from "@/components/Ui/CTA";
 export const metadata: Metadata = {
     title: "Contact | Symposium",
 };

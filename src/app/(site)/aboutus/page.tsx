@@ -1,11 +1,10 @@
-import BoxSlider from "@/components/SharedComponent/BoxSlider";
-import HeroSub from "@/components/SharedComponent/HeroSub";
+// import BoxSlider from "@/components/SharedComponent/BoxSlider";
+import HeroSub from "@/components/Ui/HeroSub";
 import React from "react";
 import '@/Style/style.css'
-import Schedules from "@/components/Home/About";
-import TicketSection from "@/components/Home/TicketSection";
-import Testimonial from "@/components/SharedComponent/Testimonial";
-import Testimonials from "@/components/Home/Testimonials";
+import TicketSection from "@/components/Ui/CTA";
+// import Testimonial from "@/components/SharedComponent/Testimonial";
+import Testimonials from "@/components/Ui/Testimonials";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "О нас | Symposium",
@@ -25,8 +24,7 @@ const page = () => {
       />
       <section className="dark:bg-darkmode">  
         <div className="container upcoming">
-          <BoxSlider/>
-          <Schedules/>        
+          {/* <BoxSlider/> */}
         </div>
       </section>      
       <div>

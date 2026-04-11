@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { HeaderItem } from '../../../../types/menu';
 import { usePathname } from 'next/navigation';
 
+
 const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname()
@@ -23,8 +24,20 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link href={item.href} className={`text-base text-accentText py-3 dark:text-white flex font-normal hover:text-primary dark:hover:text-primary ${path === item.href ? 'text-primary' : ' text-accentText dark:text-white '} ${path.startsWith(`/${item.label.toLowerCase()}`) ? 'text-baseText' : null}`}>
-        {item.label}
+      <Link href={item.href} 
+         className={`
+    text-base py-3 flex font-normal 
+    hover:text-primary dark:hover:text-primary
+    transition-colors duration-200
+    ${path === item.href 
+      ? 'text-primary' 
+      : path.startsWith(`/${item.label.toLowerCase()}`)
+        ? 'text-baseText'
+        : 'text-accentText dark:text-white'
+    }
+  `.trim().replace(/\s+/g, ' ')}
+>
+      {item.label}
         {item.submenu && (
           <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
             <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="m7 10l5 5l5-5" />

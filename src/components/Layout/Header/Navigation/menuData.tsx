@@ -2,7 +2,7 @@ import { HeaderItem } from "@/types/menu";
 
 export const headerData: HeaderItem[] = [
   { label: "Главная", href: "/" },
-  { label: "О нас", href: "/aboutus" },
+  { label: "О нас", href: "/" },
   {
     label: "Услуги",
     href: "/blog",

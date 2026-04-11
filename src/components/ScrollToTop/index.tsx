@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { ArrowUpCircleIcon } from "lucide-react";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +36,10 @@ export default function ScrollToTop() {
       onClick={scrollToTop}
       aria-hidden={!isVisible} // Optional: for accessibility
     >
-      <div className="before:content-[''] before:absolute before:w-8 before:h-8 before:bg-[url('/images/footer/top-arrow.svg')] before:bg-no-repeat before:bg-cover"></div>
+       <ArrowUpCircleIcon 
+        className="w-10 h-10 text-primary hover:text-primary/80 transition-colors" 
+        strokeWidth={1.5}
+      />
     </div>
   );
 }

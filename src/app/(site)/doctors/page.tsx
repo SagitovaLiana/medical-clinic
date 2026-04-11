@@ -1,7 +1,7 @@
-import Testimonials from "@/components/Home/Testimonials";
-import TicketSection from "@/components/Home/TicketSection";
-import OurDoctors from "@/components/Home/Doctors";
-import HeroSub from "@/components/SharedComponent/HeroSub";
+import Testimonials from "@/components/Ui/Testimonials";
+import TicketSection from "@/components/Ui/CTA";
+import OurDoctors from "@/components/Ui/Doctors";
+import HeroSub from "@/components/Ui/HeroSub";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {

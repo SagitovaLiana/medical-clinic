@@ -1,8 +1,8 @@
 import React from "react";
 import BlogList from "@/components/Blog/BlogList";
-import HeroSub from "@/components/SharedComponent/HeroSub";
+import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
-import TicketSection from "@/components/Home/TicketSection";
+import TicketSection from "@/components/Ui/CTA";
 export const metadata: Metadata = {
   title: "Blog | Symposium",
 };
