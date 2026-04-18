@@ -1,16 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { 
-  SparklesIcon,
   ClockIcon,
   HeartIcon,
   CircleCheckIcon,
   ShieldCheckIcon,
   PhoneIcon,
-  CalendarIcon,
-  StethoscopeIcon,
-  DropletIcon,
-  ActivityIcon
 } from "lucide-react";
 import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";

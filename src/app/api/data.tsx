@@ -1,4 +1,4 @@
-import { EarIcon, HeartIcon } from "lucide-react";
+import {  StethoscopeIcon, SparklesIcon, DropletIcon, SyringeIcon,  ZapIcon, BoneIcon, EarIcon, HeartIcon, } from "lucide-react";
 
 export const doctors = [
   {
@@ -38,21 +38,51 @@ export const doctors = [
   },
   {
     id: 6,
-    src: "/images/doctors/doc-saytaeva.jpg",
-    alt: "Сайтаева Юлия Юрьевна",
-    name: "Сайтаева Юлия Юрьевна",
-    designation: "Педиатор",
+    src: "/images/doctors/doc-yadrennicova.jpg",
+    alt: "Ядренникова Ирина Владимировна",
+    name: "Ядренникова Ирина Владимировна",
+    designation: "Кардиолог",
+  },
+    {
+    id: 7,
+    src: "/images/doctors/doc-shin.jpg",
+    alt: "Шин Денис Александрович",
+    name: "Шин Денис Александрович",
+    designation: "Онколог",
+  },
+      {
+    id: 8,
+    src: "/images/doctors/doc-chekmarev.jpg",
+    alt: "Чекмарев Алим Равильевич",
+    name: "Чекмарев Алим Равильевич",
+    designation: "Оториноларинголог",
   },
 ];
 
 export const conferences = [
   {
-    title: "Прием оториноларинголога",
-    icon: EarIcon,
-    subtitle: "Прием ведет",
-    speakers: "Чекмарев Алим Равилевич",
+    title: "Капельницы",
+    icon: DropletIcon,
+    subtitle: "Гиппократ",
+    speakers: "Процедурный кабинет",
     buttonText: "Подробнее",
-    buttonLink: "/services/lor",
+    buttonLink: "/services/drips",
+  },
+      {
+    title: "Лазерное удаление новообразований",
+    icon: SparklesIcon,
+    subtitle: "Прием ведет",
+    speakers: "Голков Семен Владимирович",
+    buttonText: "Подробнее",
+    buttonLink: "/services/laser-removal",
+  },
+  {
+    title: "Сдача анализов",
+    icon: SyringeIcon,
+    subtitle: "Лаборатория",
+    speakers: "KDL",
+    buttonText: "Подробнее",
+    buttonLink: "/services/lab",
   },
   {
     title: "Прием гинеколога",
@@ -62,58 +92,53 @@ export const conferences = [
     buttonText: "Подробнее",
     buttonLink: "/services/gynecology",
   },
-  {
-    title: "Сдача анализов",
-    icon: HeartIcon,
-    subtitle: "Лаборатория",
-    speakers: "KDL",
-    buttonText: "Подробнее",
-    buttonLink: "/services/lab",
-  },
     {
-    title: "Радиоволновое удаление родинок",
+    title: "Прием кардиолога",
     icon: HeartIcon,
     subtitle: "Прием ведет",
-    speakers: "Захарова Лилия Насиховна",
+    speakers: "Ядренникова Ирина Владимировна",
     buttonText: "Подробнее",
-    buttonLink: "/services/radiowave",
+    buttonLink: "/services/cardiology",
   },
       {
-    title: "Услуги косметолога",
-    icon: HeartIcon,
+    title: "Прием онколога",
+    icon:  StethoscopeIcon,
     subtitle: "Прием ведет",
-    speakers: "Захарова Лилия Насиховна",
+    speakers: "Шин Денис Александрович",
     buttonText: "Подробнее",
-    buttonLink: "/services/cosmetology",
+    buttonLink: "/services/oncology",
   },
-   {
+  {
+    title: "Прием оториноларинголога",
+    icon: EarIcon,
+    subtitle: "Прием ведет",
+    speakers: "Чекмарев Алим Равилевич",
+    buttonText: "Подробнее",
+    buttonLink: "/services/lor",
+  },
+  {
     title: "Прием травматолога",
-    icon: HeartIcon,
+    icon: BoneIcon,
     subtitle: "Прием ведет",
     speakers: "Саяпов Азат Глимзянович",
     buttonText: "Подробнее",
     buttonLink: "/services/traumatology",
   },
-     {
-    title: "Капельницы",
-    icon: HeartIcon,
+  {
+    title: "Радиоволновое удаление родинок",
+    icon:  ZapIcon,
     subtitle: "Прием ведет",
-    speakers: "Саяпов Азат Глимзянович",
+    speakers: "Захарова Лилия Насиховна",
     buttonText: "Подробнее",
-    buttonLink: "/services/drips",
-  },
-];
-
-export const intermissions = [
-  {
-    title: "Coffee Break",
-    image: "/images/upcoming/alarm.svg", // Path to the coffee break image
-    time: "10:00 - 10:30", // Time for the coffee break
+    buttonLink: "/services/radiowave",
   },
   {
-    title: "Lunch Time",
-    image: "/images/upcoming/alarm.svg", // Path to the lunch break image
-    time: "12:30 - 13:30", // Time for the lunch break
+    title: "Услуги косметолога",
+    icon: SparklesIcon,
+    subtitle: "Прием ведет",
+    speakers: "Захарова Лилия Насиховна",
+    buttonText: "Подробнее",
+    buttonLink: "/services/cosmetology",
   },
 ];
 

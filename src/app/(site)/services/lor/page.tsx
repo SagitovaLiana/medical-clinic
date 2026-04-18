@@ -7,7 +7,6 @@ import {
   HeartIcon,
   ShieldCheckIcon,
   ActivityIcon,
-  BrainIcon,
   SmileIcon,
   AwardIcon,
   ListChecksIcon
@@ -102,12 +101,12 @@ const page = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/images/doctors/doc-sayapov.jpg"
+                  src="/images/doctors/doc-chekmarev.jpg"
                   alt="Врач ЛОР Чекмарев Алим Равильевич"
-                  width={600}
-                  height={500}
+                  width={300}
+                  height={300}
                   quality={100}
-                  className="w-full h-auto object-cover"
+                  className="object-cover"
                 />
               </div>
             </div>

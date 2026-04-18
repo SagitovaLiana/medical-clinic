@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
-import { PhoneIcon, ClockIcon, MapPinIcon, CalendarIcon } from "lucide-react";
+import { PhoneIcon, ClockIcon, MapPinIcon} from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Контакты | Гиппократ",
@@ -36,8 +36,8 @@ const page = () => {
       title: "Режим работы",
       details: [
         "Пн-Пт: 8:00 - 20:00",
-        "Сб: 9:00 - 15:00",
-        "Вс: выходной"
+        "Сб: по записи",
+        "Вс: 8:00 - 20:00"
       ],
     },
   ];

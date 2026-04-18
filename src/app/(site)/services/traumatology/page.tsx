@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { 
-  SparklesIcon,
+  AwardIcon,
   ClockIcon,
   HeartIcon,
   CircleCheckIcon,
@@ -68,7 +68,7 @@ const page = () => {
                 Ушиблись, потянулись или «заклинило»? 
               </p>
               <p className="text-lg text-baseText dark:text-darktext dark:text-opacity-80 mb-6">
-              ВНе терпите боль и не ждите, 
+              Не терпите боль и не ждите, 
                 что «само пройдёт». Приходите к опытному травматологу в медицинский 
                 центр «Гиппократ». Здесь вам помогут вернуть радость движения без боли и ограничений.
             </p>
@@ -256,7 +256,7 @@ const page = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
                 <div className="w-28 h-28 bg-primary rounded-full flex items-center justify-center">
-                  <BoneIcon className="w-12 h-12 text-white" />
+                  <AwardIcon className="w-12 h-12 text-white" />
                 </div>
               </div>
               <div className="text-center md:text-left">

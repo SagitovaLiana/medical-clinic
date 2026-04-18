@@ -93,7 +93,7 @@ const ThumbnailCarousel: React.FC = () => {
         <Slider {...settingsFor} ref={mainSliderRef} className="pb-3">
           <div className="relative aspect-video">
             <Image
-              src="/images/ThumbnailSlider/Slider_1.jpg"
+              src="/images/ThumbnailSlider/Slide_1.jfif"
               alt="Conference"
               fill
               quality={100}
@@ -102,7 +102,7 @@ const ThumbnailCarousel: React.FC = () => {
           </div>
           <div className="relative aspect-video">
             <Image
-              src="/images/ThumbnailSlider/Slider_2.jfif"
+              src="/images/ThumbnailSlider/Slide_2.jpg"
               alt="Conference"
               fill
               quality={100}
@@ -111,7 +111,7 @@ const ThumbnailCarousel: React.FC = () => {
           </div>
           <div className="relative aspect-video">
             <Image
-              src="/images/ThumbnailSlider/Slider_3.jpg"
+              src="/images/ThumbnailSlider/Slide_3.jpg"
               alt="Conference"
               fill
               quality={100}
@@ -120,7 +120,16 @@ const ThumbnailCarousel: React.FC = () => {
           </div>
           <div className="relative aspect-video">
             <Image
-              src="/images/ThumbnailSlider/Slider_4.jfif"
+              src="/images/ThumbnailSlider/Slide_4.jpg"
+              alt="Conference"
+              fill
+              quality={100}
+              className="rounded-lg object-cover"
+            />
+          </div>
+          <div className="relative aspect-video">
+            <Image
+              src="/images/ThumbnailSlider/Slide_5.jpg"
               alt="Conference"
               fill
               quality={100}
@@ -134,7 +143,7 @@ const ThumbnailCarousel: React.FC = () => {
           <div className="px-2">
             <div className="relative aspect-video cursor-pointer">
               <Image
-                src="/images/ThumbnailSlider/Slider_1.jpg"
+                src="/images/ThumbnailSlider/Slide_1.jfif"
                 alt="Thumbnail"
                 fill
                 quality={80}
@@ -145,7 +154,7 @@ const ThumbnailCarousel: React.FC = () => {
           <div className="px-2">
             <div className="relative aspect-video cursor-pointer">
               <Image
-                src="/images/ThumbnailSlider/Slider_2.jfif"
+                src="/images/ThumbnailSlider/Slide_2.jpg"
                 alt="Thumbnail"
                 fill
                 quality={80}
@@ -156,7 +165,7 @@ const ThumbnailCarousel: React.FC = () => {
           <div className="px-2">
             <div className="relative aspect-video cursor-pointer">
               <Image
-                src="/images/ThumbnailSlider/Slider_3.jpg"
+                src="/images/ThumbnailSlider/Slide_3.jpg"
                 alt="Thumbnail"
                 fill
                 quality={80}
@@ -167,7 +176,18 @@ const ThumbnailCarousel: React.FC = () => {
           <div className="px-2">
             <div className="relative aspect-video cursor-pointer">
               <Image
-                src="/images/ThumbnailSlider/Slider_4.jfif"
+                src="/images/ThumbnailSlider/Slide_4.jpg"
+                alt="Thumbnail"
+                fill
+                quality={80}
+                className="rounded-lg object-cover transition-all duration-300 opacity-70 hover:opacity-100"
+              />
+            </div>
+          </div>
+          <div className="px-2">
+            <div className="relative aspect-video cursor-pointer">
+              <Image
+                src="/images/ThumbnailSlider/Slide_5.jpg"
                 alt="Thumbnail"
                 fill
                 quality={80}

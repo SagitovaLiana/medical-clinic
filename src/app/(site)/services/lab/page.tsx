@@ -1,14 +1,12 @@
 import React from "react";
+import Image from "next/image";
 import { 
-  DropletIcon,
   ClockIcon,
   FlaskConicalIcon,
   MailIcon,
-  MessageCircleIcon,
   HomeIcon,
   ShieldCheckIcon,
   SyringeIcon,
-  CalendarIcon,
   AwardIcon,
   SparklesIcon
 } from "lucide-react";
@@ -78,7 +76,7 @@ const page = () => {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
-              <DropletIcon className="w-5 h-5 text-primary" />
+              <SyringeIcon className="w-5 h-5 text-primary" />
               <span className="text-primary font-medium text-sm">Лаборатория</span>
             </div>
             
@@ -174,6 +172,15 @@ const page = () => {
               <div className="flex-shrink-0">
                 <div className="w-28 h-28 bg-primary rounded-full flex items-center justify-center">
                   <AwardIcon className="w-12 h-12 text-white" />
+                  <Image
+                                  src="/images/KDL.jpeg"
+                                  alt="hero"
+                                  width={0}
+                                  height={0}
+                                  quality={100}
+                                  sizes="100vh"
+                                  className="w-full h-full"
+                                />
                 </div>
               </div>
               <div className="text-center md:text-left">

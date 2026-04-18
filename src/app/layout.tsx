@@ -13,6 +13,7 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
+
 export default function RootLayout({
   children,
   session,

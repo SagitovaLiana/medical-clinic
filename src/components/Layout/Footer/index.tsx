@@ -47,8 +47,8 @@ const Footer: FC = () => {
               <Clock className="w-5 h-5 flex-shrink-0" />
               <div>
                 <p className="text-PaleCerulean">Пн-Пт: 8:00 - 20:00</p>
-                <p className="text-PaleCerulean">Сб: 9:00 - 15:00</p>
-                <p className="text-PaleCerulean">Вс: выходной</p>
+                <p className="text-PaleCerulean">Сб: по записи</p>
+                <p className="text-PaleCerulean">Вс: 8:00 - 20:00</p>
               </div>
             </div>
           </div>

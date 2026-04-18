@@ -1,7 +1,6 @@
 import React from "react";
 import { 
   DropletIcon,
-  ClockIcon,
   ShieldCheckIcon,
   SyringeIcon,
   HeartIcon,
@@ -11,7 +10,6 @@ import {
   TvIcon,
   SparklesIcon,
   CalendarIcon,
-  AwardIcon,
   WindIcon
 } from "lucide-react";
 import HeroSub from "@/components/Ui/HeroSub";

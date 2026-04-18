@@ -1,19 +1,14 @@
-// import BoxSlider from "@/components/SharedComponent/BoxSlider";
 import HeroSub from "@/components/Ui/HeroSub";
 import React from "react";
 import Image from "next/image";
 import '@/Style/style.css'
-import TicketSection from "@/components/Ui/CTA";
-import Testimonials from "@/components/Ui/Testimonials";
+import CTA from "@/components/Ui/CTA";
 import { Metadata } from "next";
 import {
   CalendarIcon,
   MapPinIcon,
   FileTextIcon,       
   Building2Icon,    
-  BeakerIcon,
-  UsersIcon,
-  ClipboardListIcon, 
   RadioIcon,
   SparklesIcon,
   ShieldCheckIcon,
@@ -38,7 +33,6 @@ const page = () => {
      <section className="dark:bg-darkmode py-16">
       <div className="container">
           {/* Основная информация */}
-        {/* <div className="grid lg:grid-cols-2 gap-12 items-start mb-20"> */}
         <div className="flex justify-between items-center gap-12 mb-20">
           <div
             data-aos="fade-right"
@@ -233,8 +227,7 @@ const page = () => {
       </div>
     </section>
       <div>
-        {/* <Testimonials /> */}
-        <TicketSection/>
+        <CTA/>
       </div>
     </>
   );
