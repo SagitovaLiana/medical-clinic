@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { 
+import {
   EarIcon,
   CircleCheckIcon,
   ClockIcon,
@@ -9,14 +9,15 @@ import {
   ActivityIcon,
   SmileIcon,
   AwardIcon,
-  ListChecksIcon
+  ListChecksIcon,
 } from "lucide-react";
 import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "ЛОР | Гиппократ",
-  description: "Лечим хронический тонзиллит без удаления миндалин, останавливаем гайморит без прокола. Свободное дыхание и хороший слух — это норма.",
+  description:
+    "Лечим хронический тонзиллит без удаления миндалин, останавливаем гайморит без прокола. Свободное дыхание и хороший слух — это норма.",
 };
 
 const page = () => {
@@ -47,7 +48,7 @@ const page = () => {
         description="Дышать свободно и слышать хорошо — это не роскошь, а норма"
         breadcrumbLinks={breadcrumbLinks}
       />
-      
+
       <section className="dark:bg-darkmode py-10">
         <div className="container">
           {/* Основная информация - 2 колонки */}
@@ -66,23 +67,25 @@ const page = () => {
               <p className="text-xl text-primary font-semibold mb-4">
                 Дышать свободно и слышать хорошо — это не роскошь, а норма.
               </p>
-              
+
               <p className="text-baseText dark:text-darktext dark:text-opacity-80 mb-4">
                 Сколько можно терпеть?
               </p>
-              
+
               <div className="space-y-2 mb-6">
                 <p className="flex items-center gap-2 text-baseText dark:text-darktext">
-                  <span className="text-primary">•</span> Заложенность носа уже месяц
+                  <span className="text-primary">•</span> Заложенность носа уже
+                  месяц
                 </p>
                 <p className="flex items-center gap-2 text-baseText dark:text-darktext">
-                  <span className="text-primary">•</span> Уши закладывает при каждом насморке
+                  <span className="text-primary">•</span> Уши закладывает при
+                  каждом насморке
                 </p>
               </div>
 
               <a
-                href="tel:+73478436117"
-                title="Позвонить +7 (34784) 3-61-17"
+                href="tel:+79174001025"
+                title="Позвонить +7 (917) 400-10-25"
                 className="btn btn-1 rounded-lg overflow-hidden inline-flex items-center gap-2 hover-filled-slide-down mb-8"
               >
                 <span className="!flex !items-center gap-2">
@@ -97,7 +100,6 @@ const page = () => {
               data-aos-delay="400"
               data-aos-duration="1000"
               className="relative lg:flex hidden"
-
             >
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <Image
@@ -133,8 +135,9 @@ const page = () => {
                   Лечим хронический тонзиллит
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                  Без удаления миндалин. Лакунарное промывание на специальном шприце 
-                  без рвотного рефлекса. 5-7 сеансов — и ангины уходят на годы.
+                  Без удаления миндалин. Лакунарное промывание на специальном
+                  шприце без рвотного рефлекса. 5-7 сеансов — и ангины уходят на
+                  годы.
                 </p>
               </div>
 
@@ -144,7 +147,7 @@ const page = () => {
                   Останавливаем гайморит без прокола
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                  «Кукушка» (метод перемещения жидкостей) в умелых руках врача 
+                  «Кукушка» (метод перемещения жидкостей) в умелых руках врача
                   удалит гной из пазух за 3-5 сеансов.
                 </p>
               </div>
@@ -155,7 +158,7 @@ const page = () => {
                   Удаляем серные пробки
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                  Аккуратно, тёплым раствором под давлением. Без боли и травмы 
+                  Аккуратно, тёплым раствором под давлением. Без боли и травмы
                   барабанной перепонки.
                 </p>
               </div>
@@ -166,8 +169,9 @@ const page = () => {
                   Справляемся с храпом
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                  Обследуем носоглотку, выявляем причину (искривление перегородки, 
-                  небный язычок, тонзиллит). Предложим лечение на ранних стадиях.
+                  Обследуем носоглотку, выявляем причину (искривление
+                  перегородки, небный язычок, тонзиллит). Предложим лечение на
+                  ранних стадиях.
                 </p>
               </div>
             </div>
@@ -195,9 +199,13 @@ const page = () => {
                     className="flex items-center gap-3 bg-white dark:bg-darkmode rounded-xl p-4 shadow-sm border border-border"
                   >
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                      <span className="text-primary font-bold">{index + 1}</span>
+                      <span className="text-primary font-bold">
+                        {index + 1}
+                      </span>
                     </div>
-                    <span className="text-baseText dark:text-darktext">{step}</span>
+                    <span className="text-baseText dark:text-darktext">
+                      {step}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -211,7 +219,9 @@ const page = () => {
                   {results.map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <CircleCheckIcon className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span className="text-baseText dark:text-darktext">{item}</span>
+                      <span className="text-baseText dark:text-darktext">
+                        {item}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -237,7 +247,7 @@ const page = () => {
                 Диагноз и план лечения сразу на приёме
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-darkmode rounded-2xl p-6 text-center shadow-lg border border-border">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShieldCheckIcon className="w-7 h-7 text-primary" />
@@ -249,7 +259,7 @@ const page = () => {
                 Аккуратные методики, комфортные процедуры
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-darkmode rounded-2xl p-6 text-center shadow-lg border border-border">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <SmileIcon className="w-7 h-7 text-primary" />
@@ -277,17 +287,23 @@ const page = () => {
                 </div>
               </div>
               <div className="text-center md:text-left">
-                <p className="text-sm text-primary font-medium mb-2">ЛОР ВРАЧ ВЫСШЕЙ КАТЕГОРИИ</p>
+                <p className="text-sm text-primary font-medium mb-2">
+                  ЛОР ВРАЧ ВЫСШЕЙ КАТЕГОРИИ
+                </p>
                 <h3 className="text-2xl md:text-3xl font-bold text-accentTextBrown dark:text-white mb-3">
                   Чекмарев Алим Равильевич
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                  Опытный ЛОР-врач с <span className="font-bold text-primary">40-летним стажем</span>. 
-                  За плечами врача — тысячи вылеченных пациентов с самыми разными заболеваниями 
-                  уха, горла и носа. Использует только современные и максимально щадящие методики 
-                  лечения. Благодаря богатому опыту и высочайшему профессионализму помогает 
-                  пациентам забыть о хронических болезнях и вернуть радость свободного дыхания 
-                  и хорошего слуха.
+                  Опытный ЛОР-врач с{" "}
+                  <span className="font-bold text-primary">
+                    40-летним стажем
+                  </span>
+                  . За плечами врача — тысячи вылеченных пациентов с самыми
+                  разными заболеваниями уха, горла и носа. Использует только
+                  современные и максимально щадящие методики лечения. Благодаря
+                  богатому опыту и высочайшему профессионализму помогает
+                  пациентам забыть о хронических болезнях и вернуть радость
+                  свободного дыхания и хорошего слуха.
                 </p>
               </div>
             </div>

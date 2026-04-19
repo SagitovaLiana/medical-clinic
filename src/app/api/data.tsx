@@ -1,4 +1,13 @@
-import {  StethoscopeIcon, SparklesIcon, DropletIcon, SyringeIcon,  ZapIcon, BoneIcon, EarIcon, HeartIcon, } from "lucide-react";
+import {
+  StethoscopeIcon,
+  SparklesIcon,
+  DropletIcon,
+  SyringeIcon,
+  ZapIcon,
+  BoneIcon,
+  EarIcon,
+  HeartIcon,
+} from "lucide-react";
 
 export const doctors = [
   {
@@ -43,14 +52,14 @@ export const doctors = [
     name: "Ядренникова Ирина Владимировна",
     designation: "Кардиолог",
   },
-    {
+  {
     id: 7,
     src: "/images/doctors/doc-shin.jpg",
     alt: "Шин Денис Александрович",
     name: "Шин Денис Александрович",
     designation: "Онколог",
   },
-      {
+  {
     id: 8,
     src: "/images/doctors/doc-chekmarev.jpg",
     alt: "Чекмарев Алим Равильевич",
@@ -68,7 +77,7 @@ export const conferences = [
     buttonText: "Подробнее",
     buttonLink: "/services/drips",
   },
-      {
+  {
     title: "Лазерное удаление новообразований",
     icon: SparklesIcon,
     subtitle: "Прием ведет",
@@ -92,7 +101,7 @@ export const conferences = [
     buttonText: "Подробнее",
     buttonLink: "/services/gynecology",
   },
-    {
+  {
     title: "Прием кардиолога",
     icon: HeartIcon,
     subtitle: "Прием ведет",
@@ -100,9 +109,9 @@ export const conferences = [
     buttonText: "Подробнее",
     buttonLink: "/services/cardiology",
   },
-      {
+  {
     title: "Прием онколога",
-    icon:  StethoscopeIcon,
+    icon: StethoscopeIcon,
     subtitle: "Прием ведет",
     speakers: "Шин Денис Александрович",
     buttonText: "Подробнее",
@@ -126,7 +135,7 @@ export const conferences = [
   },
   {
     title: "Радиоволновое удаление родинок",
-    icon:  ZapIcon,
+    icon: ZapIcon,
     subtitle: "Прием ведет",
     speakers: "Захарова Лилия Насиховна",
     buttonText: "Подробнее",
@@ -145,26 +154,66 @@ export const conferences = [
 export const testimonials = [
   {
     id: 1,
+    name: "Михайлов Д.А.",
+    title: "Профессионал своего дела",
+    text: "Обратился к Азату Глимзяновичу после спортивной травмы. Очень грамотный травматолог, назначил эффективное лечение. Через несколько недель уже вернулся к тренировкам. Спасибо за помощь!",
+    rating: 5,
+    image: "/images/doctors/doc-sayapov.jpg",
+  },
+  {
+    id: 2,
     name: "Иванова А.К.",
-    title:"Я нашла своего врача",
+    title: "Я нашла своего врача",
     text: "Я очень долго искала врача на ведение беременности и была так рада найти Гузель Кавиевну. Сама клиника комфортная, удобно расположена и недалеко от центра! Спасибо большое за такой опыт",
     rating: 5,
     image: "/images/doctors/doc-valieva.jpg",
   },
   {
-    id: 2,
-    name: "Петрова Е.В.",
-     title:"Я нашла своего врача",
-    text: "Отличная клиника! Врачи профессионалы своего дела. Очень внимательное отношение к пациентам. Рекомендую!",
+    id: 3,
+    name: "Королёв В.Н.",
+    title: "Отличный хирург",
+    text: "Делал операцию у Семена Владимировича. Все прошло отлично, послеоперационный период прошел без осложнений. Врач очень внимательный, все подробно объяснил перед операцией. Рекомендую!",
     rating: 5,
-    image: "/images/doctors/doc-sayapov.jpg",
+    image: "/images/doctors/doc-golkov.jpg",
   },
   {
-    id: 3,
-    name: "Сидоров М.И.",
-     title:"Я нашла своего врача",
-    text: "Быстрое и качественное обслуживание. Современное оборудование. Спасибо доктору Голкову за профессиональную помощь!",
-    rating: 4,
-    image: "/images/doctors/doc-golkov.jpg",
+    id: 4,
+    name: "Сагитова Л.И.",
+    title: "Я перестала бояться",
+    text: "Огромное спасибо Лилии Насиховне за профессиональную работу. Долго подбирала косметолога, так как медицинское оброзование для меня было важным критерием! Врач очень деликатная, внимательная, процедуры прошли комфортно.",
+    rating: 5,
+    image: "/images/doctors/doc-zaharova.jpg",
+  },
+  {
+    id: 5,
+    name: "Николаева А.В.",
+    title: "Лучший педиатр",
+    text: "Юлия Юрьевна наблюдает моего ребенка с самого рождения. Всегда внимательная, грамотная, назначения действительно помогают. Ребенок не боится ходить к врачу. Очень благодарны за заботу!",
+    rating: 5,
+    image: "/images/doctors/doc-saytaeva.jpg",
+  },
+  {
+    id: 6,
+    name: "Степанов И.П.",
+    title: "Надёжный кардиолог",
+    text: "Ирина Владимировна помогла разобраться с проблемами сердца. Очень подробно все объяснила, назначила обследования и эффективное лечение. Давление пришло в норму, чувствую себя отлично. Спасибо!",
+    rating: 5,
+    image: "/images/doctors/doc-yadrennicova.jpg",
+  },
+  {
+    id: 7,
+    name: "Трофимов Р.С.",
+    title: "Высококлассный специалист",
+    text: "Очень благодарен Денису Александровичу за его профессионализм и чуткое отношение. Врач провел тщательную диагностику и назначил правильное лечение. Внимательный и знающий онколог. Рекомендую от всей души!",
+    rating: 5,
+    image: "/images/doctors/doc-shin.jpg",
+  },
+  {
+    id: 8,
+    name: "Федорова Е.Л.",
+    title: "Наконец-то дышу свободно",
+    text: "Долго мучилась с хроническим насморком, Алим Равильевич быстро нашел причину и вылечил. Прием прошел комфортно, врач все очень подробно рассказал. Огромное спасибо за профессиональную помощь!",
+    rating: 5,
+    image: "/images/doctors/doc-chekmarev.jpg",
   },
 ];

@@ -45,8 +45,8 @@ const HeroSection = () => {
                 </span>
               </Link>
               <Link
-                href="tel:+73478436117"
-                title="Позвонить +7 (34784) 3-61-17"
+                href="tel:+79174001025"
+                title="Позвонить +7 (917) 400-10-25"
                 data-aos="fade-up"
                 data-aos-delay="600"
                 data-aos-duration="1000"
@@ -104,4 +104,4 @@ const HeroSection = () => {
   );
 };
 
-export default  HeroSection;
+export default HeroSection;

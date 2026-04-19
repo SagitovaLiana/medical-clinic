@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { 
+import {
   AwardIcon,
   ClockIcon,
   HeartIcon,
@@ -10,14 +10,15 @@ import {
   ActivityIcon,
   BoneIcon,
   TrendingUpIcon,
-  DropletIcon
+  DropletIcon,
 } from "lucide-react";
 import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Травматология | Гиппократ",
-  description: "Точный диагноз в день обращения + план лечения. Плазмолифтинг — восстановление суставов вашей собственной кровью.",
+  description:
+    "Точный диагноз в день обращения + план лечения. Плазмолифтинг — восстановление суставов вашей собственной кровью.",
 };
 
 const page = () => {
@@ -48,7 +49,7 @@ const page = () => {
         description="Точный диагноз в день обращения + план лечения"
         breadcrumbLinks={breadcrumbLinks}
       />
-      
+
       <section className="dark:bg-darkmode py-10">
         <div className="container">
           {/* Основная информация - 2 колонки */}
@@ -61,17 +62,19 @@ const page = () => {
             >
               <div className="inline-flex items-center gap-2 bg-primary/10 py-2 rounded-full mb-6">
                 <BoneIcon className="w-5 h-5 text-primary" />
-                <span className="text-primary font-medium text-sm">Травматология</span>
+                <span className="text-primary font-medium text-sm">
+                  Травматология
+                </span>
               </div>
 
               <p className="text-xl text-primary font-semibold mb-4">
-                Ушиблись, потянулись или «заклинило»? 
+                Ушиблись, потянулись или «заклинило»?
               </p>
               <p className="text-lg text-baseText dark:text-darktext dark:text-opacity-80 mb-6">
-              Не терпите боль и не ждите, 
-                что «само пройдёт». Приходите к опытному травматологу в медицинский 
-                центр «Гиппократ». Здесь вам помогут вернуть радость движения без боли и ограничений.
-            </p>
+                Не терпите боль и не ждите, что «само пройдёт». Приходите к
+                опытному травматологу в медицинский центр «Гиппократ». Здесь вам
+                помогут вернуть радость движения без боли и ограничений.
+              </p>
               <div className="bg-primary/5 rounded-2xl p-5 mb-6">
                 <div className="flex items-center gap-3 mb-2">
                   <ClockIcon className="w-5 h-5 text-primary" />
@@ -82,8 +85,8 @@ const page = () => {
               </div>
 
               <a
-                href="tel:+73478436117"
-                title="Позвонить +7 (34784) 3-61-17"
+                href="tel:+79174001025"
+                title="Позвонить +7 (917) 400-10-25"
                 className="btn btn-1 rounded-lg overflow-hidden inline-flex items-center gap-2 hover-filled-slide-down mb-8"
               >
                 <span className="!flex !items-center gap-2">
@@ -151,7 +154,10 @@ const page = () => {
                   <div className="space-y-2 text-baseText dark:text-darktext">
                     <p>• Своя кровь — нулевая аллергия и отторжение</p>
                     <p>• Рост собственных клеток хряща</p>
-                    <p>• Факторы роста «штопают» микротрещины и восстанавливают объём хряща</p>
+                    <p>
+                      • Факторы роста «штопают» микротрещины и восстанавливают
+                      объём хряща
+                    </p>
                   </div>
                 </div>
               </div>
@@ -165,7 +171,9 @@ const page = () => {
                   {results.map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <CircleCheckIcon className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span className="text-baseText dark:text-darktext">{item}</span>
+                      <span className="text-baseText dark:text-darktext">
+                        {item}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -186,7 +194,7 @@ const page = () => {
               </h2>
               <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
             </div>
-            
+
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {indications.map((item, index) => (
                 <div
@@ -196,7 +204,9 @@ const page = () => {
                   className="flex items-center gap-2 bg-white dark:bg-darkmode rounded-xl p-3 shadow-sm border border-border hover:shadow-md transition-shadow"
                 >
                   <HeartIcon className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-baseText dark:text-darktext text-sm">{item}</span>
+                  <span className="text-baseText dark:text-darktext text-sm">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
@@ -220,7 +230,7 @@ const page = () => {
                 Точный результат и сразу план лечения
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-darkmode rounded-2xl p-6 text-center shadow-lg border border-border">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <SyringeIcon className="w-7 h-7 text-primary" />
@@ -232,7 +242,7 @@ const page = () => {
                 Своя кровь — нет аллергии и отторжения
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-darkmode rounded-2xl p-6 text-center shadow-lg border border-border">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ActivityIcon className="w-7 h-7 text-primary" />
@@ -260,14 +270,17 @@ const page = () => {
                 </div>
               </div>
               <div className="text-center md:text-left">
-                <p className="text-sm text-primary font-medium mb-2">ВРАЧ ТРАВМАТОЛОГ ВЫСШЕЙ КАТЕГОРИИ</p>
+                <p className="text-sm text-primary font-medium mb-2">
+                  ВРАЧ ТРАВМАТОЛОГ ВЫСШЕЙ КАТЕГОРИИ
+                </p>
                 <h3 className="text-2xl md:text-3xl font-bold text-accentTextBrown dark:text-white mb-3">
                   Саяпов Азат Гилемзянович
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                    Опытный травматолог-ортопед с более чем 30-летним стажем. 
-                    За плечами врача — тысячи успешных операций и восстановленных пациентов. 
-                  Использует современные методы диагностики и лечения, включая плазмолифтинг.
+                  Опытный травматолог-ортопед с более чем 30-летним стажем. За
+                  плечами врача — тысячи успешных операций и восстановленных
+                  пациентов. Использует современные методы диагностики и
+                  лечения, включая плазмолифтинг.
                 </p>
               </div>
             </div>

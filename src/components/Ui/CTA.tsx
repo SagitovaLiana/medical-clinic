@@ -17,8 +17,8 @@ const CTA = () => {
                   Без очередей. Удобное время
                 </p>
                 <Link
-                  href="tel:+73478436117"
-                  title="Позвонить +7 (34784) 3-61-17"
+                  href="tel:+79174001025"
+                  title="Позвонить +7 (917) 400-10-25"
                   className="btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden before:bg-accentTextBrown dark:before:bg-primary "
                 >
                   <span className="sm:!px-20 px-10 !border-accentTextBrown !text-white hover:!text-accentTextBrown dark:!border-primary dark:hover:!text-primary ">

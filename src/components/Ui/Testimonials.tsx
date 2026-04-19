@@ -40,7 +40,7 @@ const Testimonials = () => {
     ],
   };
 
-    const StarRating = ({ rating }: { rating: number }) => {
+  const StarRating = ({ rating }: { rating: number }) => {
     return (
       <div className="flex items-center">
         {[...Array(5)].map((_, i) => (
@@ -68,51 +68,51 @@ const Testimonials = () => {
       <section className="dark:bg-darklight testimonial">
         <div className="container">
           <Slider {...settings}>
-             {testimonials.map((testimonial, index) => (
-            <div key={index}>
-              <div className="grid md:grid-cols-12 grid-cols-1 items-center">
-                 {testimonial.image && (
-                <div
-                  data-aos="fade-right"
-                  data-aos-delay="200"
-                  data-aos-duration="1000"
-                  className="col-span-4 sm:rounded-br-214 rounded-br-182 sm:rounded-tl-214 rounded-tl-182 relative before:content-[''] before:absolute before:bg-[url('/images/testimonials/quotes.png')] before:w-109 before:h-109 before:-right-10 before:top-32 lg:inline-block hidden"
-                >
-                  <Image
-                    src={testimonial.image}
-                    alt="отзывы"
-                    width={0}
-                    height={0}
-                    quality={100}
-                    sizes="100vh"
-                    className="w-full h-full rounded-22"
-                  />
-                </div>
-                 )}
-                <div
-                  data-aos="fade-left"
-                  data-aos-delay="300"
-                  data-aos-duration="1000"
-                  // className="col-span-8 md:ml-28 ml-0"
-                  className={`${testimonial.image ? "col-span-8" : "col-span-12"} md:ml-28 ml-0`}
-                >
-                  <h2 className="max-w-72"> {testimonial.title}</h2>
-                  <p className="text-lg font-normal text-baseText dark:text-darktext dark:text-opacity-80 py-10 max-w-632">
-                     {testimonial.text}
-                  </p>
-                  <div className="flex items-center gap-8">
-                    <div>
-                      <p className="text-xl font-medium text-secondary dark:text-white pb-1">
-                        {testimonial.name}
-                      </p>
-                       <StarRating rating={testimonial.rating} />
+            {testimonials.map((testimonial, index) => (
+              <div key={index}>
+                <div className="grid md:grid-cols-12 grid-cols-1 items-center">
+                  {testimonial.image && (
+                    <div
+                      data-aos="fade-right"
+                      data-aos-delay="200"
+                      data-aos-duration="1000"
+                      className="col-span-4 sm:rounded-br-214 rounded-br-182 sm:rounded-tl-214 rounded-tl-182 relative before:content-[''] before:absolute before:bg-[url('/images/testimonials/quotes.png')] before:w-109 before:h-109 before:-right-10 before:top-32 lg:inline-block hidden"
+                    >
+                      <Image
+                        src={testimonial.image}
+                        alt="отзывы"
+                        width={0}
+                        height={0}
+                        quality={100}
+                        sizes="100vh"
+                        className="w-full h-full rounded-22"
+                      />
+                    </div>
+                  )}
+                  <div
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-duration="1000"
+                    // className="col-span-8 md:ml-28 ml-0"
+                    className={`${testimonial.image ? "col-span-8" : "col-span-12"} md:ml-28 ml-0`}
+                  >
+                    <h2 className="max-w-72"> {testimonial.title}</h2>
+                    <p className="text-lg font-normal text-baseText dark:text-darktext dark:text-opacity-80 py-10 max-w-632">
+                      {testimonial.text}
+                    </p>
+                    <div className="flex items-center gap-8">
+                      <div>
+                        <p className="text-xl font-medium text-secondary dark:text-white pb-1">
+                          {testimonial.name}
+                        </p>
+                        <StarRating rating={testimonial.rating} />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-            </Slider>
+            ))}
+          </Slider>
         </div>
       </section>
     </>

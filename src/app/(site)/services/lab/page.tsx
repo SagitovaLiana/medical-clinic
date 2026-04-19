@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { 
+import {
   ClockIcon,
   FlaskConicalIcon,
   MailIcon,
@@ -8,14 +8,15 @@ import {
   ShieldCheckIcon,
   SyringeIcon,
   AwardIcon,
-  SparklesIcon
+  SparklesIcon,
 } from "lucide-react";
 import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Сдача анализов | Гиппократ",
-  description: "Безболезненно, без ожидания, более 1500 видов анализов. Медсестра на дом. Результаты на email и в мессенджеры.",
+  description:
+    "Безболезненно, без ожидания, более 1500 видов анализов. Медсестра на дом. Результаты на email и в мессенджеры.",
 };
 
 const page = () => {
@@ -29,17 +30,20 @@ const page = () => {
     {
       icon: SyringeIcon,
       title: "Безболезненно",
-      description: "Используем системы и тончайшие иглы — дискомфорта почти нет",
+      description:
+        "Используем системы и тончайшие иглы — дискомфорта почти нет",
     },
     {
       icon: ClockIcon,
       title: "Без ожидания",
-      description: "Приходите к назначенному времени. Процедура занимает 5-15 минут",
+      description:
+        "Приходите к назначенному времени. Процедура занимает 5-15 минут",
     },
     {
       icon: FlaskConicalIcon,
       title: "Всё в одном месте",
-      description: "Более 1500 видов анализов: кровь, моча, гормоны, аллергены, онкомаркеры",
+      description:
+        "Более 1500 видов анализов: кровь, моча, гормоны, аллергены, онкомаркеры",
     },
     {
       icon: MailIcon,
@@ -49,12 +53,14 @@ const page = () => {
     {
       icon: HomeIcon,
       title: "Выездная служба",
-      description: "Не можете приехать? Медсестра приедет к вам домой или в офис",
+      description:
+        "Не можете приехать? Медсестра приедет к вам домой или в офис",
     },
     {
       icon: ShieldCheckIcon,
       title: "Лаборатория КДЛ",
-      description: "Стандарты превышают требования Минздрава — точный и быстрый результат",
+      description:
+        "Стандарты превышают требования Минздрава — точный и быстрый результат",
     },
   ];
 
@@ -65,7 +71,7 @@ const page = () => {
         description="Быстро, чисто и без стресса"
         breadcrumbLinks={breadcrumbLinks}
       />
-      
+
       <section className="dark:bg-darkmode py-10">
         <div className="container">
           {/* Основная информация */}
@@ -77,17 +83,20 @@ const page = () => {
           >
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
               <SyringeIcon className="w-5 h-5 text-primary" />
-              <span className="text-primary font-medium text-sm">Лаборатория</span>
+              <span className="text-primary font-medium text-sm">
+                Лаборатория
+              </span>
             </div>
-            
+
             <p className="text-xl text-primary font-semibold mb-4">
               Сдать анализы быстро, чисто и без стресса
             </p>
-            
+
             <div className="space-y-3 text-baseText dark:text-darktext">
               <p>Никаких очередей с 8 утра. Никаких нервов.</p>
               <p className="text-lg font-semibold text-accentTextBrown dark:text-white">
-                Только Вы, Ваш комфорт и профессиональная медсестра «лёгкой руки»
+                Только Вы, Ваш комфорт и профессиональная медсестра «лёгкой
+                руки»
               </p>
             </div>
           </div>
@@ -145,13 +154,14 @@ const page = () => {
                     Можно получить расшифровку у врача клиники
                   </h3>
                   <p className="text-baseText dark:text-darktext">
-                    Врач подробно объяснит результаты анализов и даст рекомендации
+                    Врач подробно объяснит результаты анализов и даст
+                    рекомендации
                   </p>
                 </div>
               </div>
               <a
-                href="tel:+73478436117"
-                title="Позвонить +7 (34784) 3-61-17"
+                href="tel:+79174001025"
+                title="Позвонить +7 (917) 400-10-25"
                 className="btn btn-1 rounded-lg overflow-hidden inline-flex items-center gap-2 hover-filled-slide-down whitespace-nowrap"
               >
                 <span className="!flex !items-center gap-2">
@@ -173,14 +183,14 @@ const page = () => {
                 <div className="w-28 h-28 bg-primary rounded-full flex items-center justify-center">
                   <AwardIcon className="w-12 h-12 text-white" />
                   <Image
-                                  src="/images/KDL.jpeg"
-                                  alt="hero"
-                                  width={0}
-                                  height={0}
-                                  quality={100}
-                                  sizes="100vh"
-                                  className="w-full h-full"
-                                />
+                    src="/images/KDL.jpeg"
+                    alt="hero"
+                    width={0}
+                    height={0}
+                    quality={100}
+                    sizes="100vh"
+                    className="w-full h-full"
+                  />
                 </div>
               </div>
               <div className="text-center md:text-left">
@@ -188,14 +198,13 @@ const page = () => {
                   Лаборатория КДЛ
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                  Работаем с лабораторией КДЛ, которая работает со стандартами, 
-                  превышающими требования Минздрава. Кому важен точный и быстрый результат — 
-                  выбирают нас.
+                  Работаем с лабораторией КДЛ, которая работает со стандартами,
+                  превышающими требования Минздрава. Кому важен точный и быстрый
+                  результат — выбирают нас.
                 </p>
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </>

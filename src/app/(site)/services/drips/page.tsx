@@ -1,5 +1,5 @@
 import React from "react";
-import { 
+import {
   DropletIcon,
   ShieldCheckIcon,
   SyringeIcon,
@@ -10,14 +10,15 @@ import {
   TvIcon,
   SparklesIcon,
   CalendarIcon,
-  WindIcon
+  WindIcon,
 } from "lucide-react";
 import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Капельницы | Гиппократ",
-  description: "Капельницы с магнезией, витаминами, ноотропами, антиоксидантами, детокс. Восстановление после ОРВИ, гриппа, обезвоживания.",
+  description:
+    "Капельницы с магнезией, витаминами, ноотропами, антиоксидантами, детокс. Восстановление после ОРВИ, гриппа, обезвоживания.",
 };
 
 const page = () => {
@@ -46,12 +47,28 @@ const page = () => {
   ];
 
   const dripTypes = [
-    { icon: HeartIcon, title: "С магнезией", description: "Для сердца и сосудов" },
-    { icon: SparklesIcon, title: "С витаминами", description: "Восполнение дефицита" },
-    { icon: BrainIcon, title: "С ноотропами", description: "Для памяти и концентрации" },
+    {
+      icon: HeartIcon,
+      title: "С магнезией",
+      description: "Для сердца и сосудов",
+    },
+    {
+      icon: SparklesIcon,
+      title: "С витаминами",
+      description: "Восполнение дефицита",
+    },
+    {
+      icon: BrainIcon,
+      title: "С ноотропами",
+      description: "Для памяти и концентрации",
+    },
     { icon: LeafIcon, title: "Антиоксиданты", description: "Защита клеток" },
     { icon: DropletIcon, title: "Детокс", description: "Очищение организма" },
-    { icon: WindIcon, title: "Восстановление после ОРВИ", description: "Быстрое возвращение к жизни" },
+    {
+      icon: WindIcon,
+      title: "Восстановление после ОРВИ",
+      description: "Быстрое возвращение к жизни",
+    },
   ];
 
   return (
@@ -61,7 +78,7 @@ const page = () => {
         description="Бодрое утро без усталости и стресса"
         breadcrumbLinks={breadcrumbLinks}
       />
-      
+
       <section className="dark:bg-darkmode py-10">
         <div className="container">
           {/* Основная информация */}
@@ -73,17 +90,23 @@ const page = () => {
           >
             <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
               <DropletIcon className="w-5 h-5 text-primary" />
-              <span className="text-primary font-medium text-sm">Инфузионная терапия</span>
+              <span className="text-primary font-medium text-sm">
+                Инфузионная терапия
+              </span>
             </div>
-            
+
             <p className="text-xl text-primary font-semibold mb-4">
               Капельница — не для больниц, а для вашего бодрого утра
             </p>
-            
+
             <div className="space-y-3 text-baseText dark:text-darktext">
-              <p>Усталость, ОРВИ, авитаминоз, стресс — всё это не болезни, но жить мешают.</p>
+              <p>
+                Усталость, ОРВИ, авитаминоз, стресс — всё это не болезни, но
+                жить мешают.
+              </p>
               <p className="text-lg font-semibold text-accentTextBrown dark:text-white">
-                Приходите в процедурный кабинет клиники «Гиппократ». Поставим капельницу, которая реально поможет.
+                Приходите в процедурный кабинет клиники «Гиппократ». Поставим
+                капельницу, которая реально поможет.
               </p>
             </div>
           </div>
@@ -100,13 +123,15 @@ const page = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                   <CoffeeIcon className="w-6 h-6 text-primary" />
                 </div>
-                <span className="text-baseText dark:text-darktext">Комфортное кресло</span>
+                <span className="text-baseText dark:text-darktext">
+                  Комфортное кресло
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                   <div className="w-6 h-6 rounded-sm bg-primary/40">
-                 < HeartIcon className="w-6 h-6 text-primary" />
-</div>
+                    <HeartIcon className="w-6 h-6 text-primary" />
+                  </div>
                 </div>
                 <span className="text-baseText dark:text-darktext">Плед</span>
               </div>
@@ -114,7 +139,9 @@ const page = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                   <TvIcon className="w-6 h-6 text-primary" />
                 </div>
-                <span className="text-baseText dark:text-darktext">Сериал — час для себя</span>
+                <span className="text-baseText dark:text-darktext">
+                  Сериал — час для себя
+                </span>
               </div>
             </div>
           </div>
@@ -145,8 +172,12 @@ const page = () => {
                     <item.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-dark dark:text-white">{item.title}</h3>
-                    <p className="text-xs text-baseText dark:text-darktext">{item.description}</p>
+                    <h3 className="font-semibold text-dark dark:text-white">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-baseText dark:text-darktext">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -154,8 +185,10 @@ const page = () => {
 
             <div className="bg-primary/5 rounded-2xl p-6 text-center">
               <p className="text-baseText dark:text-darktext">
-                <span className="font-semibold text-primary">Врачебный контроль</span> — подберёт состав капельниц 
-                именно под ваши жалобы
+                <span className="font-semibold text-primary">
+                  Врачебный контроль
+                </span>{" "}
+                — подберёт состав капельниц именно под ваши жалобы
               </p>
             </div>
           </div>
@@ -210,8 +243,8 @@ const page = () => {
               Час для себя в комфортном кресле с пледом и любимым сериалом
             </p>
             <a
-              href="tel:+73478436117"
-              title="Позвонить +7 (34784) 3-61-17"
+              href="tel:+79174001025"
+              title="Позвонить +7 (917) 400-10-25"
               className="btn btn-1 rounded-lg overflow-hidden inline-flex items-center gap-2 hover-filled-slide-down"
             >
               <span className="!flex !items-center gap-2">

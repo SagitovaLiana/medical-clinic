@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { 
+import {
   ClockIcon,
   HeartIcon,
   CircleCheckIcon,
@@ -10,14 +10,15 @@ import {
   MicroscopeIcon,
   AlertTriangleIcon,
   FileTextIcon,
-  CalendarIcon
+  CalendarIcon,
 } from "lucide-react";
 import HeroSub from "@/components/Ui/HeroSub";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Онкология | Гиппократ",
-  description: "Ранняя диагностика онкологических заболеваний. Осмотр молочных желез, пункция, консультация онколога. Онколог Шин Денис Александрович.",
+  description:
+    "Ранняя диагностика онкологических заболеваний. Осмотр молочных желез, пункция, консультация онколога. Онколог Шин Денис Александрович.",
 };
 
 const page = () => {
@@ -63,7 +64,7 @@ const page = () => {
         description="Ранняя диагностика — залог успешного лечения"
         breadcrumbLinks={breadcrumbLinks}
       />
-      
+
       <section className="dark:bg-darkmode py-10">
         <div className="container">
           {/* Основная информация - 2 колонки */}
@@ -76,29 +77,31 @@ const page = () => {
             >
               <div className="inline-flex items-center gap-2 bg-primary/10 py-2 rounded-full mb-6">
                 <StethoscopeIcon className="w-5 h-5 text-primary" />
-                <span className="text-primary font-medium text-sm">Онкология</span>
+                <span className="text-primary font-medium text-sm">
+                  Онкология
+                </span>
               </div>
 
               <p className="text-xl text-primary font-semibold mb-4">
                 Ранняя диагностика спасает жизни
               </p>
-              
-              <p className="text-baseText dark:text-darktext dark:text-opacity-80 mb-6">
-                Онкологические заболевания лучше поддаются лечению, когда выявлены на ранней стадии. 
-                Доверьте своё здоровье опытному онкологу частной клиники «Гиппократ». 
-                Мы подберём для Вас удобное время для визита, включая вечерние часы и выходные.
-              </p>
-            
-                <div className="flex items-center gap-3 mb-8">
-                  <p className="text-lg font-semibold text-accentTextBrown dark:text-white">
-                    Своевременное обращение к онкологу может спасти вашу жизнь
-                  </p>
-                </div>
 
+              <p className="text-baseText dark:text-darktext dark:text-opacity-80 mb-6">
+                Онкологические заболевания лучше поддаются лечению, когда
+                выявлены на ранней стадии. Доверьте своё здоровье опытному
+                онкологу частной клиники «Гиппократ». Мы подберём для Вас
+                удобное время для визита, включая вечерние часы и выходные.
+              </p>
+
+              <div className="flex items-center gap-3 mb-8">
+                <p className="text-lg font-semibold text-accentTextBrown dark:text-white">
+                  Своевременное обращение к онкологу может спасти вашу жизнь
+                </p>
+              </div>
 
               <a
-                href="tel:+73478436117"
-                title="Позвонить +7 (34784) 3-61-17"
+                href="tel:+79174001025"
+                title="Позвонить +7 (917) 400-10-25"
                 className="btn btn-1 rounded-lg overflow-hidden inline-flex items-center gap-2 hover-filled-slide-down"
               >
                 <span className="!flex !items-center gap-2">
@@ -140,7 +143,7 @@ const page = () => {
               </h2>
               <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
             </div>
-            
+
             <div className="grid sm:grid-cols-2 gap-4">
               {symptoms.map((item, index) => (
                 <div
@@ -152,7 +155,9 @@ const page = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <AlertTriangleIcon className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-baseText dark:text-darktext font-medium">{item}</span>
+                  <span className="text-baseText dark:text-darktext font-medium">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
@@ -168,7 +173,9 @@ const page = () => {
             <div className="text-center max-w-3xl mx-auto mb-10">
               <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-1 rounded-full mb-4">
                 <HeartIcon className="w-4 h-4 text-primary" />
-                <span className="text-primary font-medium text-xs">Женское здоровье</span>
+                <span className="text-primary font-medium text-xs">
+                  Женское здоровье
+                </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-accentTextBrown dark:text-white mb-4">
                 Диагностика молочных желез
@@ -179,14 +186,17 @@ const page = () => {
             <div className="grid lg:grid-cols-2 gap-12 mb-8">
               <div>
                 <p className="text-baseText dark:text-darktext mb-6">
-                  Молочные железы требуют особого внимания. Регулярный осмотр у онколога 
-                  помогает вовремя выявить изменения и предотвратить развитие серьёзных заболеваний.
+                  Молочные железы требуют особого внимания. Регулярный осмотр у
+                  онколога помогает вовремя выявить изменения и предотвратить
+                  развитие серьёзных заболеваний.
                 </p>
                 <div className="space-y-3">
                   {breastSymptoms.map((item, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <CircleCheckIcon className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span className="text-baseText dark:text-darktext">{item}</span>
+                      <span className="text-baseText dark:text-darktext">
+                        {item}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -197,11 +207,21 @@ const page = () => {
                   Что делаем
                 </h3>
                 <div className="space-y-2">
-                  <p className="text-baseText dark:text-darktext">• Осмотр и пальпация молочных желез</p>
-                  <p className="text-baseText dark:text-darktext">• Пункция новообразований (тонкоигольная биопсия)</p>
-                  <p className="text-baseText dark:text-darktext">• Забор материала на цитологию</p>
-                  <p className="text-baseText dark:text-darktext">• Направление на маммографию и УЗИ</p>
-                  <p className="text-baseText dark:text-darktext">• Расшифровка результатов</p>
+                  <p className="text-baseText dark:text-darktext">
+                    • Осмотр и пальпация молочных желез
+                  </p>
+                  <p className="text-baseText dark:text-darktext">
+                    • Пункция новообразований (тонкоигольная биопсия)
+                  </p>
+                  <p className="text-baseText dark:text-darktext">
+                    • Забор материала на цитологию
+                  </p>
+                  <p className="text-baseText dark:text-darktext">
+                    • Направление на маммографию и УЗИ
+                  </p>
+                  <p className="text-baseText dark:text-darktext">
+                    • Расшифровка результатов
+                  </p>
                 </div>
               </div>
             </div>
@@ -220,7 +240,7 @@ const page = () => {
               </h2>
               <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
             </div>
-            
+
             <div className="grid sm:grid-cols-2 gap-4">
               {whatWeDo.map((item, index) => (
                 <div
@@ -230,7 +250,9 @@ const page = () => {
                   className="flex items-center gap-2 bg-white dark:bg-darkmode rounded-xl p-3 shadow-sm border border-border hover:shadow-md transition-shadow"
                 >
                   <CircleCheckIcon className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-baseText dark:text-darktext">{item}</span>
+                  <span className="text-baseText dark:text-darktext">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
@@ -254,7 +276,7 @@ const page = () => {
                 Приём в удобное для вас время, включая вечерние часы и выходные
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-darkmode rounded-2xl p-6 text-center shadow-lg border border-border">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FileTextIcon className="w-7 h-7 text-primary" />
@@ -266,7 +288,7 @@ const page = () => {
                 Объясним результаты анализов и исследований простыми словами
               </p>
             </div>
-            
+
             <div className="bg-white dark:bg-darkmode rounded-2xl p-6 text-center shadow-lg border border-border">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CalendarIcon className="w-7 h-7 text-primary" />
@@ -294,16 +316,20 @@ const page = () => {
                 </div>
               </div>
               <div className="text-center md:text-left">
-                <p className="text-sm text-primary font-medium mb-2">ВРАЧ-ОНКОЛОГ</p>
+                <p className="text-sm text-primary font-medium mb-2">
+                  ВРАЧ-ОНКОЛОГ
+                </p>
                 <h3 className="text-2xl md:text-3xl font-bold text-accentTextBrown dark:text-white mb-3">
                   Шин Денис Александрович
                 </h3>
                 <p className="text-baseText dark:text-darktext">
-                  Опытный онколог, специализирующийся на ранней диагностике онкологических заболеваний. 
-                  Проводит осмотр молочных желез, пункцию новообразований, забор материала на цитологию. 
-                  Помогает вовремя выявить риски и составить индивидуальный план наблюдения. 
-                  Внимательный подход к каждому пациенту, понятное объяснение всех назначений 
-                  и рекомендаций. Доверьте своё здоровье профессионалу.
+                  Опытный онколог, специализирующийся на ранней диагностике
+                  онкологических заболеваний. Проводит осмотр молочных желез,
+                  пункцию новообразований, забор материала на цитологию.
+                  Помогает вовремя выявить риски и составить индивидуальный план
+                  наблюдения. Внимательный подход к каждому пациенту, понятное
+                  объяснение всех назначений и рекомендаций. Доверьте своё
+                  здоровье профессионалу.
                 </p>
               </div>
             </div>
