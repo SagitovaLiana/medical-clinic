@@ -8,7 +8,7 @@ const CTA = () => {
       <section className="dark:bg-darklight lg:pt-20 pt-10">
         <div className="container">
           <div className="bg-baseText dark:bg-darkmode relative md:mx-auto mx-0 overflow-hidden py-0 rounded-22 lg:-mb-48 dark:lg:-mb-48 ">
-            <div className="flex flex-wrap items-center justify-center gap-20 sm:p-10 p-5 ">
+            <div className="flex flex-wrap items-center justify-between sm:p-10 p-5 ">
               <div className="xl:text-start text-center">
                 <p className="sm:text-4xl text-[28px] leading-[2.25rem] font-bold text-white xl:max-w-404 max-w-full xl:pb-9 pb-2">
                   Запишитесь на приём сегодня

@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import ScrollToTop from "@/components/ScrollToTop";
 import Aoscompo from "@/utils/aos";
 import NextTopLoader from "nextjs-toploader";
+import CookieConsent from "@/components/Common/CookieConsent";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
                 <Footer />
               </Aoscompo>
               <ScrollToTop />
+              <CookieConsent />
               </ThemeProvider>
       </body>
     </html>

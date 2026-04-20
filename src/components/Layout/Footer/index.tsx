@@ -73,13 +73,20 @@ const Footer: FC = () => {
           <div className="flex items-center md:justify-center justify-start">
           <ul className="flex flex-col items-start md:space-y-4  space-y-2 md:text-lg text-base font-normal">
             <li className="transition-all duration-300 hover:text-primary">
-              <Link href="/">Лицензия</Link>
+              <a 
+                href="/license.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                Лицензия
+              </a>
             </li>
             <li className="transition-all duration-300 hover:text-primary">
               <Link href="/">Политика обработки ПДн</Link>
             </li>
             <li className="transition-all duration-300 hover:text-primary">
-              <Link href="/">Политика cookie</Link>
+              <Link href="/cookie">Политика cookie</Link>
             </li>
           </ul>
           </div>
